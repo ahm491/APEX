@@ -4031,14 +4031,14 @@ body{-webkit-tap-highlight-color:transparent}
 .code,.search-res,.search-panel{-webkit-overflow-scrolling:touch}
 
 /* ---- path top bar (picker + progress) ---- */
-.path-top{display:flex;align-items:center;gap:22px;flex-wrap:wrap;padding:22px 0 4px}
+.path-top{display:flex;align-items:center;gap:22px;flex-wrap:wrap;padding:22px 0 4px;max-width:1140px;margin-inline:auto}
 .path-top .stage-picker{margin:0;flex:0 0 auto;min-width:250px}
 .path-top .progress-box{margin:0;flex:1 1 260px;min-width:220px}
 .prog-note{margin:5px 0 0;font-size:.72rem;color:var(--muted);line-height:1.5}
 /* ---- two-pane lesson: reading (right) + sticky video/quiz (left) ---- */
-.stage-grid{display:grid;grid-template-columns:minmax(0,1fr) 384px;gap:44px;align-items:start;margin-top:6px}
-@media(min-width:901px) and (max-width:1180px){.stage-grid{grid-template-columns:minmax(0,1fr) 330px;gap:28px}}
-.lesson-read{min-width:0;max-width:74ch;font-size:1rem;line-height:1.85}
+.stage-grid{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:44px;align-items:start;margin-top:6px;max-width:1140px;margin-inline:auto}
+@media(min-width:901px) and (max-width:1180px){.stage-grid{grid-template-columns:minmax(0,1fr) 340px;gap:30px}}
+.lesson-read{min-width:0;font-size:1rem;line-height:1.85}
 .lesson-aside{position:-webkit-sticky;position:sticky;top:82px;align-self:start;display:flex;flex-direction:column;gap:16px;max-height:calc(100vh - 100px);overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;padding-inline-start:2px}
 .lesson-aside::-webkit-scrollbar{width:8px}
 .lesson-aside::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px}
@@ -4060,9 +4060,7 @@ body{-webkit-tap-highlight-color:transparent}
 /* ---- keyboard focus visibility ---- */
 .stage-picker select:focus-visible,.q-opt:focus-visible,.stage-nav button:focus-visible,.mark-btn:focus-visible,#toTop:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 
-@media(max-width:1200px){
-  .stage-grid{grid-template-columns:1fr 300px;gap:26px}
-}
+
 
 /* ---- bilingual layer ---- */
 html.lang-en .i-ar{display:none!important}
